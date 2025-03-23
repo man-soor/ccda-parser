@@ -27,7 +27,7 @@ def entries(element):
     Get entries within an element (with tag name 'entry'), adds an `each` method
     """
     els = element.els_by_tag('entry')
-    els.each = lambda callback: map(callback, els)
+    els.each = lambda callback: list(map(callback, els))
     return els
 
 
@@ -70,7 +70,7 @@ def parse_date(string):
     The syntax is "YYYYMMDDHHMMSS.UUUU[+|-ZZzz]" where digits can be omitted
     the right side to express less precision
     """
-    if not isinstance(string, basestring):
+    if not isinstance(string, str):
         return None
 
     # ex. value="1999" translates to 1 Jan 1999

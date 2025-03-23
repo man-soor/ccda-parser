@@ -8,6 +8,6 @@ Created on Mon Jul  2 21:43:56 2018
 
 def strip_whitespace(text):
     """ Remove leading and trailing whitespace from a string """
-    if not isinstance(text, basestring):
+    if not isinstance(text, str):
         return text
     return text.strip()

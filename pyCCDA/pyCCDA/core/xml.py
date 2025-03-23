@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Mon Jul  2 21:52:17 2018
+Created on Mon Jul  2 21:45:39 2018
 
 @author: mansooralam, yanjingwang
 """
 
-from __future__ import absolute_import
 import logging
 from xml.etree import ElementTree as etree
 
@@ -18,7 +17,7 @@ logging.getLogger(__name__).addHandler(logging.NullHandler())
 
 
 def parse(data):
-    if not data or not isinstance(data, basestring):
+    if not data or not isinstance(data, str):
         logging.info('BB Error: XML data is not a string')
         return None
 

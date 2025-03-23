@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pyCCDA
+Version: 0.0.1
+Summary: CCDA Parser
+Home-page: http://github.com/mansooralam/pyCCDA
+Author: Mansoor Alam
+Author-email: me@mansooralam.com
+License: MIT
+License-File: LICENSE

@@ -6,9 +6,9 @@ Created on Mon Jul  2 16:48:03 2018
 @author: mansooralam, yanjingwang
 """
 
-from bluebutton import core
-from bluebutton.core import codes
-from bluebutton import documents
+from ... import core
+from ...core import codes
+from ... import documents
 from ...core import wrappers
 
 

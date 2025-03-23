@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyCCDA"
+version = "1.0.0"
+description = "CCDA Parser for Python 3"
+readme = "README.md"
+authors = [
+    {name = "Mansoor Alam", email = "me@mansooralam.com"}
+]
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8", 
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Medical Science Apps.",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+requires-python = ">=3.6"
+
+[project.urls]
+"Homepage" = "https://github.com/mansooralam/pyCCDA"
+"Bug Tracker" = "https://github.com/mansooralam/pyCCDA/issues"

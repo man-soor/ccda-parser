@@ -8,8 +8,8 @@ Created on Mon Jul  2 21:56:30 2018
 
 from . import core
 from . import documents
-import documents.ccda
-import parsers.ccda
+from .documents import ccda
+from .parsers import ccda as ccda_parser
 
 
 class BlueButton(object):
@@ -32,8 +32,8 @@ class BlueButton(object):
                 # parsed_document = parsers.C32.run(parsed_data)
                 pass
             elif 'ccda' == type:
-                parsed_data = documents.ccda.process(parsed_data)
-                parsed_document = parsers.ccda.run(parsed_data)
+                parsed_data = ccda.process(parsed_data)
+                parsed_document = ccda_parser.run(parsed_data)
             elif 'json' == type:
                 # TODO: add support for JSON
                 pass
@@ -41,3 +41,6 @@ class BlueButton(object):
         self.type = type
         self.data = parsed_document
         self.source = parsed_data
+
+# Expose BlueButton as CCDA for backward compatibility
+CCDA = BlueButton
