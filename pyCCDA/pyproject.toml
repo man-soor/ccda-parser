@@ -8,7 +8,9 @@ version = "1.0.0"
 description = "CCDA Parser for Python 3"
 readme = "README.md"
 authors = [
-    {name = "Mansoor Alam", email = "me@mansooralam.com"}, {name = "Yanjing Wang"}
+    {name = "Mansoor Alam", email = "me@mansooralam.com"}
+]
+contributors = [ {name = "Yanjing Wang"}
 ]
 license = {text = "MIT"}
 classifiers = [
