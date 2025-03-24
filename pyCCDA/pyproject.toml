@@ -7,11 +7,12 @@ name = "pyCCDA"
 version = "2.0.0"
 description = "CCDA Parser for Python 3"
 readme = "README.md"
-authors = [
+authors = [ 
     {name = "Mansoor Alam", email = "me@mansooralam.com"}
 ]
-contributors = [ {name = "Yanjing Wang"}
+maintainers = [ {name = "Yanjing Wang"}
 ]
+keywords = [ "healthcare", "ccda", "interoperability" ]
 license = {text = "MIT"}
 classifiers = [
     "Programming Language :: Python :: 3",
