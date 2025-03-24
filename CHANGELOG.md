@@ -8,6 +8,7 @@ Notable changes to this project will be documented in this file.
 - Update for Python 3 compatibility
 - Fixed package structure re: `__init__.py` files
 - Exposed BlueButton class as CCDA for backward compatibility
+- Added GH Workflow for PyPi publishing
 
 ### Changed
 - Replaced Python 2 string handling (`basestring`) with Python 3 (`str`)

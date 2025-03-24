@@ -1,6 +1,6 @@
 # pyCCDA
 
-A lightweight Python library for parsing raw C-CDA (Consolidated Clinical Document Architecture) documents without the need to understand the entire specification. If you're using [BlueButton.js](https://github.com/blue-button/bluebutton.js/) this maintains much of the same functionality.
+A lightweight Python library based on BlueButton, for parsing raw C-CDA (Consolidated Clinical Document Architecture) documents without the need to understand the entire specification. If you're using [BlueButton.js](https://github.com/blue-button/bluebutton.js/) this maintains much of the same functionality. Credit due to the BlueBotton contributors. 
 
 Test documents from various vendors available [here](https://github.com/jmandel/sample_ccdas).
 
@@ -102,10 +102,38 @@ pyCCDA/
 - Python 3.6 or higher recommended
 - No longer compatible with Python 2.x
 
+## Development
+
+### Requirements
+
+- Python 3.6 or higher
+- Dependencies: 
+  - lxml (for XML parsing)
+
+For development, additional requirements can be installed with:
+```bash
+pip install -e ".[dev]"
+```
+
+Or install from requirements.txt:
+```bash
+pip install -r requirements.txt
+```
+
+### Running Tests
+
+```bash
+# Install test dependencies
+pip install pytest
+
+# Run tests
+pytest
+```
+
 ## License
 
 MIT
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions needed! Please feel free to submit a Pull Request.

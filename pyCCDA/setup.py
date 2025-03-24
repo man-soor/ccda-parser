@@ -9,6 +9,17 @@ setup(name='pyCCDA',
       license='MIT',
       packages=find_packages(),
       python_requires='>=3.6',
+      install_requires=[
+          'lxml>=4.6.0',
+      ],
+      extras_require={
+          'dev': [
+              'pytest>=6.0.0',
+              'flake8>=3.8.0',
+              'twine>=3.4.0',
+              'build>=0.7.0',
+          ],
+      },
       classifiers=[
           'Programming Language :: Python :: 3',
           'Programming Language :: Python :: 3.6',
